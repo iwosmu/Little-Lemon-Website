@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+
+
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-left: 25px;
+}
+
+.nav li {
+    margin: 0 0.5rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Markazi Text', sans-serif;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #f39c12;
+}

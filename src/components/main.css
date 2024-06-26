@@ -1,0 +1,17 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.specials .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.testimonials .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

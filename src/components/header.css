@@ -1,0 +1,25 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 95px);
+    /* Adjusted to specify the width of each column */
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    /* This remains the same */
+    grid-row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 174px;
+}
+
+.logo {
+    grid-column: 3 / span 3;
+}
+
+.logo img {
+    width: 343px;
+}
+
+.nav {
+    grid-column: 6 / span 5;
+    align-items: center;
+}

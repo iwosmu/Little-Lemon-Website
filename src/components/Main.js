@@ -1,13 +1,41 @@
 import React from 'react'
+import '../components/main.css'
 
 const Main = () => {
   return (
     <main>
-        <article>
-            <h2>Article Title</h2>
-            <p>Article content goes here...</p>
-        </article>
-    </main>
+    <section className="hero">
+      <div className="text">
+        <h1>Little Lemon</h1>
+        <p>Chicago</p>
+        <button>Reserve a Table</button>
+      </div>
+      <img src="image.jpg" alt="Delicious food" />
+    </section>
+
+    <section className="specials">
+      <h2>Our Specials!</h2>
+      <div className="grid">
+        {/* Repeat for each special item */}
+        <div className="special-item">
+          <img src="greek_salad.jpg" alt="Greek Salad" />
+          <h3>Greek Salad</h3>
+          <p>$11.99</p>
+        </div>
+      </div>
+    </section>
+
+    <section className="testimonials">
+      <h2>Testimonials</h2>
+      <div className="testimonials-grid">
+        {/* Repeat for each testimonial */}
+        <div className="testimonial">
+          <p>"Great food!"</p>
+          <p>John Doe</p>
+        </div>
+      </div>
+    </section>
+  </main>
   )
 }
 
