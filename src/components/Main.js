@@ -1,16 +1,18 @@
 import React from 'react'
 import '../components/main.css'
+import food1 from '../assets/restauranfood.jpg'
 
 const Main = () => {
   return (
     <main>
-    <section className="hero">
+     <section className="hero">
       <div className="text">
         <h1>Little Lemon</h1>
-        <p>Chicago</p>
-        <button>Reserve a Table</button>
+        <h3>Chicago</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button className="btn">Reserve a Table</button>
       </div>
-      <img src="image.jpg" alt="Delicious food" />
+      <img src={food1} alt="Delicious food" />
     </section>
 
     <section className="specials">
