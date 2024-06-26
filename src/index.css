@@ -18,7 +18,16 @@ code {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   max-width: 900px;
-  /* Adjust based on your design preference */
   margin: 0 auto;
-  /* Center the grid container */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 10px;
+  }
 }

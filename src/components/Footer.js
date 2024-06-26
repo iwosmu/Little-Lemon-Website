@@ -5,10 +5,10 @@ import '../components/footer.css'
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-column">
+      <div className="footer-logo">
         <img src={logo} alt="Little Lemon" className="footer-logo" />
       </div>
-      <div className="footer-column">
+      <div className="footer-links">
         <ul>
           <li>Home</li>
           <li>About</li>
@@ -18,7 +18,7 @@ const Footer = () => {
           <li>Login</li>
         </ul>
       </div>
-      <div className="footer-column">
+      <div className="footer-contact">
         <ul>
           <li>Contact us</li>
           <li>Adrian</li>
@@ -26,7 +26,7 @@ const Footer = () => {
           <li>+48 523 521 592</li>
         </ul>
       </div>
-      <div className="footer-column">
+      <div className="footer-media">
         <ul>
           <li>Our social media</li>
           <li>Facebook</li>

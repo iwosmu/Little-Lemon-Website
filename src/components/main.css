@@ -1,6 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
+@media screen and (max-width: 768px) {
+    .hero {
+        height: auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .hero .text {
+        grid-column: 1 / -1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .specials .grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .btn,
+    input[type="submit"],
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
 .hero {
     display: grid;
     grid-template-columns: repeat(12, 95px);
@@ -254,7 +289,7 @@
 }
 
 .owners img {
-    height: 360px;
+    width: 273px;
     border-radius: 16px;
     margin: 0;
 }
