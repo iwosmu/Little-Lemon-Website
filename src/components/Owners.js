@@ -4,7 +4,7 @@ import owners2 from '../assets/Mario and Adrian b.jpg'
 
 const Owners = () => {
   return (
-    <section className="owners">
+    <section className="owners" id="about">
       <div className="text">
         <h1>Little Lemon</h1>
         <h3>Chicago</h3>

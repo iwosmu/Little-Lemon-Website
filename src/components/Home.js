@@ -1,11 +1,11 @@
 import React from 'react'
-import '../components/main.css'
+import '../components/home.css'
 import Hero from './Hero'
 import Specials from './Specials'
 import Testimonials from './Testimonials'
 import Owners from './Owners'
 
-const Main = () => {
+const Home = () => {
   return (
     <main>
      <Hero/>
@@ -16,4 +16,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Home
