@@ -7,12 +7,12 @@ import Owners from './Owners'
 
 const Home = () => {
   return (
-    <main>
-     <Hero/>
-    <Specials/>
-    <Testimonials/>
-    <Owners/>
-  </main>
+    <>
+      <Hero/>
+      <Specials/>
+      <Testimonials/>
+      <Owners/>
+    </>
   )
 }
 
