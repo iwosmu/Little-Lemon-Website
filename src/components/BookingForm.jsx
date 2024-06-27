@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BookingForm = ({ availableTimes, dispatch }) => {
+const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
   const [resDate, setResDate] = useState("");
   const [resTime, setResTime] = useState("");
   const [guests, setGuests] = useState(1);
@@ -10,10 +10,13 @@ const BookingForm = ({ availableTimes, dispatch }) => {
     e.preventDefault();
     console.log("Reservation confirmed");
     console.log({ resDate, resTime, guests, occasion });
+    submitForm({ resDate, resTime, guests, occasion });
   };
+
   const handleDateChange = (e) => {
-    setResDate(e.target.value);
-    dispatch({ type: "UPDATE_TIMES", date: e.target.value });
+    const newDate = e.target.value;
+    setResDate(newDate);
+    updateDate(newDate);
   };
 
   return (
