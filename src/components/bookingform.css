@@ -4,7 +4,6 @@
 .booking-form {
     display: flex;
     justify-content: center;
-    ;
     align-items: center;
     font-family: 'Karla', sans-serif;
     margin-top: 20px;
@@ -35,16 +34,13 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    /* Adjusted to add space at the bottom */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /* Makes sure padding doesn't add to the width */
 }
 
 .booking-form button {
     grid-column: span 2;
-    /* Makes the button span two columns */
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
