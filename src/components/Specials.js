@@ -5,7 +5,7 @@ import lemondessert from '../assets/lemon_dessert.jpg'
 
 const Specials = () => {
   return (
-    <section className="specials">
+    <section className="specials" id='menu'>
     <h2>Our Specials!</h2>
     <button className='btn'>Online Menu</button>
     <div className="grid">
