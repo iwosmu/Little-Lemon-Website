@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./bookingform.css";
+import "../styles/bookingform.css";
 
 const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
   const [resDate, setResDate] = useState(availableTimes[0]);

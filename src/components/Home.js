@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/home.css'
+import '../styles/home.css'
 import Hero from './Hero'
 import Specials from './Specials'
 import Testimonials from './Testimonials'
