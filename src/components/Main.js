@@ -45,12 +45,13 @@ const Main = () => {
   const submitForm = async (formData) =>{
     const result = await submitAPI(formData);
     if(result){
-      navigate('/confirmation');
+      navigate('/confirmation', { state: { formData } });
     }
     else{
       alert('Failed to submit');
+    }
   }
-}
+
 
   const [currentDate, setCurrentDate] = useState(new Date());
   const [availableTimes, dispatch] = useReducer(timesReducer, []);

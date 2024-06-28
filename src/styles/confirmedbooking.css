@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+.container {
+    font-family: 'Karla', sans-serif;
+    color: #D9D9d9;
+    display: grid;
+    grid-template-columns: repeat(12, 95px);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    height: 420px;
+    background-color: #495E57;
+}
+
+.container h1 {
+    font-family: 'Markazi Text', sans-serif;
+    color: #F4CE14;
+    font-size: 64px;
+    margin-bottom: 0;
+    font-weight: 500;
+    grid-column: 3 / span 8;
+}
+
+.booking-details {
+    grid-column: 3 / span 8;
+    border: 1px solid #D9D9d9;
+}
+
+.booking-details p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 10px;
+}

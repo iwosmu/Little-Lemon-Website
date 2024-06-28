@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../styles/bookingform.css";
+import greek_salad from "../assets/greek_salad.jpg";
+import bruchetta from "../assets/bruchetta.png";
+import lemon_dessert from "../assets/lemon_dessert.jpg";
 
 const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
   const [resDate, setResDate] = useState(availableTimes[0]);
-  const [resTime, setResTime] = useState("");
+  const [resTime, setResTime] = useState(availableTimes[0]);
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
   const [isFormValid, setIsFormValid] = useState(false);
@@ -42,11 +45,8 @@ const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
 
   return (
     <div className="booking-form">
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
-        data-testid="booking-form"
-      >
+      <h1>Make a reservation</h1>
+      <form onSubmit={handleSubmit} data-testid="booking-form">
         <label htmlFor="res-date">Choose date</label>
         <input
           type="date"
@@ -92,9 +92,14 @@ const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
+        <div className="images">
+          <img src={greek_salad} alt="greek salad" />
+          <img src={bruchetta} alt="bruchetta" />
+          <img src={lemon_dessert} alt="lemon dessert" />
+        </div>
 
         {/* <input type="submit" value="Make Your reservation" /> */}
-        <button type="submit" disabled={!isFormValid}>
+        <button type="submit" disabled={!isFormValid} className="submit-btn">
           Make Your reservation
         </button>
       </form>
