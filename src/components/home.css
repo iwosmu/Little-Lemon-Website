@@ -102,6 +102,11 @@
     cursor: pointer;
 }
 
+#link {
+    text-decoration: none;
+    color: black;
+}
+
 .specials {
     display: grid;
     grid-template-columns: repeat(12, 95px);
