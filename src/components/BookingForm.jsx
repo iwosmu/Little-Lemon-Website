@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
-  const [resDate, setResDate] = useState("");
+  const [resDate, setResDate] = useState(availableTimes[0]);
   const [resTime, setResTime] = useState("");
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState("");
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isFormValid) {
+      console.log("Failed to submit");
+      return;
+    }
     console.log("Reservation confirmed");
     console.log({ resDate, resTime, guests, occasion });
     submitForm({ resDate, resTime, guests, occasion });
@@ -18,6 +23,21 @@ const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
     setResDate(newDate);
     updateDate(newDate);
   };
+
+  const getTodayDate = () => {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const day = String(today.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
+  useEffect(() => {
+    const isValidDate = resDate >= getTodayDate();
+    const isValidGuests = guests > 0 && guests <= 10;
+    const isOccasionSelected = occasion !== "";
+
+    setIsFormValid(isValidDate && isValidGuests && isOccasionSelected);
+  }, [resDate, resTime, guests, occasion, availableTimes]);
 
   return (
     <form
@@ -31,6 +51,8 @@ const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
         id="res-date"
         value={resDate}
         onChange={handleDateChange}
+        min={getTodayDate()}
+        required
       />
 
       <label htmlFor="res-time">Choose time</label>
@@ -62,13 +84,17 @@ const BookingForm = ({ availableTimes, updateDate, submitForm }) => {
         id="occasion"
         value={occasion}
         onChange={(e) => setOccasion(e.target.value)}
+        required
       >
         <option value="">Select occasion</option>
         <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
       </select>
 
-      <input type="submit" value="Make Your reservation" />
+      {/* <input type="submit" value="Make Your reservation" /> */}
+      <button type="submit" disabled={!isFormValid}>
+        Make Your reservation
+      </button>
     </form>
   );
 };
