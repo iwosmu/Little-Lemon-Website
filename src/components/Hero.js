@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="text">
         <h1>Little Lemon</h1>
         <h3>Chicago</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Experience the best Mediterranean cuisine, crafted with passion and fresh ingredients. Join us for an unforgettable dining experience.</p>
         <button className="btn"><Link to="/reservations" id='link'>Reserve a Table</Link></button>
       </div>
       <img src={food} alt="Delicious food" />

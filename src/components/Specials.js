@@ -15,7 +15,7 @@ const Specials = () => {
           <h3>Greek Salad</h3>
           <p className="price">$11.99</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Fresh and crisp, our Greek Salad is a perfect blend of tomatoes, cucumbers, olives, and feta cheese, dressed with our signature vinaigrette.</p>
         <p>Order a delivery 🏍</p>
       </div>
       <div className="special-item">
@@ -24,7 +24,7 @@ const Specials = () => {
           <h3>Bruschetta</h3>
           <p className="price">$5.99</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Crispy toasted bread topped with a savory mix of tomatoes, basil, garlic, and olive oil, perfect for a light appetizer.</p>
         <p>Order a delivery 🏍</p>
       </div>
       <div className="special-item">
@@ -33,7 +33,7 @@ const Specials = () => {
           <h3>Lemon Dessert</h3>
         <p className="price">$4.99</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Indulge in our zesty Lemon Dessert, a sweet and tangy treat that’s sure to satisfy your cravings.</p>
         <p>Order a delivery 🏍</p>
       </div>
     </div>

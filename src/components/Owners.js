@@ -8,7 +8,7 @@ const Owners = () => {
       <div className="text">
         <h1>Little Lemon</h1>
         <h3>Chicago</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Discover the taste of authentic Mediterranean dishes at Little Lemon. Our menu features fresh, locally sourced ingredients prepared with care. From savory appetizers to delectable desserts, there's something for everyone to enjoy. Join us for a meal that combines tradition with innovation.</p>
       </div>
       <img src={owners1} alt="owners" id="i1"/>
       <img src={owners2} alt="owners" id="i2"/>
